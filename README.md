@@ -1,23 +1,23 @@
-# AI for Developer Productivity: Technical Writer Agent
+Based on the code changes and commit messages from the GitHub pull request, it seems that the changes are related to automating the process of updating the README file after a pull request is merged. Here is a summary of the key changes:
 
-## Overview
-In this project, we developed a **Technical Writer Agent** to enhance developer productivity. The core functionality of our agent leverages Retrieval-Augmented Generation (RAG) to dynamically update and refine technical documentation. This innovative approach not only streamlines the documentation process but also ensures that it remains accurate, up-to-date, and contextually relevant.
+1. **Workflow File (.github/workflows/update_readme.yaml):**
+    - Added a workflow for updating the README after a pull request is closed.
+    - The workflow runs on a merged pull request.
+    - Sets up Python environment, installs dependencies, extracts PR number and commit SHA, generates an updated README using Python script, and enables debug logging.
 
-## Now It's Your Turn!
-Embrace your creativity and personalize this project to craft a solution that uniquely addresses the challenges and inefficiencies you face in your own environment. After seeing what our Technical Writer Agent can do, it’s time for you to take the reins. Use the foundation we’ve built and apply it to a challenge you face in your own professional or personal environment. Here’s how you can get started:
+2. **VS Code Settings File (.vscode/settings.json):**
+    - Updated the default interpreter path for Python.
 
-### Minimum Requirements
-1. **RAG Integration:** Successfully integrate Retrieval-Augmented Generation (RAG) to enable your agent to access and utilize external information when generating responses.
-2. **Vector Database Implementation:** Create and implement a vector data store capable of embedding and retrieving documents, ensuring that the system can access necessary information efficiently.
+3. **Requirements File (requirements.txt):**
+    - Updated Python package dependencies.
 
-### Stretch Goals
-1. **Enhanced UI/UX:** Develop a more advanced and user-friendly interface that includes features such as real-time suggestions, auto-completion of content, and a more interactive documentation process.
-2. **Automated Content Updates:** Implement a feature where the agent periodically checks and updates existing documentation based on new information or changes in the relevant field, ensuring that all documentation remains current without manual intervention.
-3. **Integration with Existing Tools:** Develop integrations for the agent with commonly used development tools and platforms (e.g., Confluence, Jira, Notion) to streamline workflows and increase accessibility.
-4. **Add The Features You Want**: Let your creativity shine by adding a unique feature that significantly simplifies or enhances your daily routines. Innovate with functionalities that solve problems and improve efficiency or satisfaction in meaningful ways.
+4. **Utility Module (utility.py):**
+    - Updated the function to format data for OpenAI based on diffs, README content, and commit messages.
+    - Added functionality to call OpenAI to generate content based on the provided prompt.
+    - Updated the function to update the README and create a pull request with the proposed changes.
 
-## Privacy and Submission Guidelines
-- **Submission Requirements:** Please submit a link to your public repo with your implementation or a loom video showcasing your work on the [BloomTech AI Platform](app.bloomtech.com). 
-- **Sensitive Information:** If your implementation involves sensitive information, you are not required to submit a public repository. Instead, a detailed review of your project through a Loom video is acceptable, where you can demonstrate the functionality and discuss the technologies used without exposing confidential data.
+The commit message "implement readme update" suggests that these changes are related to implementing an automated process for updating the README file based on code changes and commit messages.
 
----
+Given the nature of these changes, it appears that the README file may need to be updated to reflect these automation changes and provide relevant information to developers about the process. The README update should include details about the automation workflow and any necessary configurations or instructions for using the updated automation process.
+
+If you need further assistance in updating the README file based on these changes, feel free to ask!
